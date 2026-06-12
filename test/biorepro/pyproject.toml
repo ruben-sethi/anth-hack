@@ -1,0 +1,26 @@
+[project]
+name = "biorepro"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "mr-lubo",email = "ruben.sethi@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "numpy>=1.26",
+]
+
+[project.optional-dependencies]
+notebooks = [
+    "jupyter>=1.0",
+    "ipykernel>=6.0",
+    "matplotlib>=3.8",
+]
+
+[tool.poetry]
+packages = [{include = "biorepro", from = "src"}]
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
